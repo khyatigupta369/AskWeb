@@ -1,6 +1,22 @@
+# Ignore virtual environment directory
 /venv
+
+# Ignore IDE-specific directories
+/.idea
 /.vscode
-/config.json
-/temp
+
+# Ignore compiled Python files
 __pycache__
-config.json
+
+# Ignore generated index and CSV files
+/index.bin
+/texts.csv
+
+# Ignore configuration files
+/config.json
+
+# Ignore temporary files or directories
+/temp
+
+# Ignore uploaded files
+/upload
