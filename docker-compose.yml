@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  chatweb:
+    build: .
+    ports:
+      - "9090:9090"
+      - "8080:8080"
+    volumes:
+      - ./config.json:/app/config.json
+      # Uncomment the line below if you need to mount the entire project directory into the container
+      # - ./:/app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
