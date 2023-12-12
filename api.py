@@ -16,7 +16,7 @@ from contents import web_crawler_newspaper, extract_text_from_txt, extract_text_
 from storage import Storage
 
 
-def run_api(config: Config):
+def api(config: Config):
     """Run the API."""
     config.use_stream = False
     ai_instance = AI(config)
